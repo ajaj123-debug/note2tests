@@ -92,10 +92,10 @@ export default function AboutPage() {
 
   const team = [
     {
-      name: "Dr. Alex Thompson",
+      name: "Ajaj",
       role: "AI Research Lead",
-      bio: "PhD in Machine Learning with 10+ years experience in educational technology.",
-      avatar: "AT"
+      bio: "B.Tech in Machine Learning with 2+ years experience in educational technology.",
+      avatar: "AJ"
     },
     {
       name: "Maria Garcia",
