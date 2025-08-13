@@ -1,7 +1,7 @@
 djangorestframework
 google-generativeai
 python-dotenv
-fitz
+PyMuPDF==1.24.2
 Django==5.1.2
 gunicorn
 django-cors-headers
