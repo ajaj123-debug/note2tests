@@ -36,6 +36,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'corsheaders.middleware.CorsMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -118,7 +119,8 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",  # React (Vite) dev server
+    "https://note2tests.vercel.app",
+    "http://localhost:5173",  # for local dev
 ]
 
 INSTALLED_APPS += [
@@ -133,3 +135,6 @@ REST_FRAMEWORK = {
 
 # Your Google client ID for frontend validation (optional)
 GOOGLE_CLIENT_ID = '794068868736-ndm7b7dqs5le977gb2uiidmhfh0phmvl.apps.googleusercontent.com'
+CORS_ALLOW_CREDENTIALS = True
+# Optional: Allow all origins (not recommended for production)
+CORS_ALLOW_ALL_ORIGINS = True
