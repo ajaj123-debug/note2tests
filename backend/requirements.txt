@@ -1,0 +1,4 @@
+djangorestframework
+google-generativeai
+python-dotenv
+fitz
