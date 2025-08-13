@@ -2,3 +2,6 @@ djangorestframework
 google-generativeai
 python-dotenv
 fitz
+Django==5.1.2
+gunicorn
+django-cors-headers
