@@ -5,4 +5,4 @@ fitz
 Django==5.1.2
 gunicorn
 django-cors-headers
-
+djangorestframework-simplejwt
