@@ -182,7 +182,7 @@ export default function ProfilePage() {
                 </div>
                 <div>
                   <h1 className="text-2xl font-semibold text-gray-900">
-                    {user?.name || 'Quiz Creator'}
+                    {user?.name || 'My Profile'}
                   </h1>
                   <p className="text-gray-600 text-sm">{user?.email}</p>
                 </div>
