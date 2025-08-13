@@ -18,7 +18,12 @@ SECRET_KEY = 'django-insecure-8%e!42f5#%oii9qwpleks!=wp1xy9dzc1hnprqyuo553%i%(q(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "note2tests.onrender.com",  # your backend
+    "localhost",                # for local dev
+    "127.0.0.1"
+]
+
 
 
 # Application definition
@@ -68,7 +73,6 @@ WSGI_APPLICATION = 'note2test.wsgi.application'
 
 
 # Database
-# https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 DATABASES = {
     'default': {
