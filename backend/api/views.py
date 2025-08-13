@@ -11,8 +11,6 @@ import google.generativeai as genai
 
 import os
 import json
-from django.http import JsonResponse
-from django.views.decorators.csrf import csrf_exempt
 from django.conf import settings
 from dotenv import load_dotenv
 import google.generativeai as genai
@@ -60,7 +58,6 @@ def generate_quiz_from_text(text):
 load_dotenv()
 genai.configure(api_key=settings.GEMINI_API_KEY)
 
-@csrf_exempt
 @csrf_exempt
 def upload_pdf(request):
     if request.method == "POST":
