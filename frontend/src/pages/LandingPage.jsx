@@ -190,7 +190,7 @@ const LandingPage = () => {
                          {/* Right Content - Testimonials */}
              <div className="relative animate-[float_6s_ease-in-out_infinite]">
                {/* Decoration */}
-               <div className="absolute inset-0 w-full aspect-[4/3] bg-gradient-to-br from-[#818cf8] to-[#38bdf8] rounded-3xl opacity-10 -z-10 top-[10%] left-[10%] bottom-[10%]"></div>
+               <div className="absolute w-full aspect-[4/3] bg-gradient-to-br from-[#818cf8] to-[#38bdf8] rounded-3xl opacity-10 -z-10 translate-x-[1%] top-[10%]"></div>
                
                {/* Testimonials Grid */}
                <div className="grid grid-cols-2 gap-6 p-8 bg-white rounded-3xl shadow-2xl">
