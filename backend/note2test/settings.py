@@ -142,3 +142,7 @@ GOOGLE_CLIENT_ID = '794068868736-ndm7b7dqs5le977gb2uiidmhfh0phmvl.apps.googleuse
 CORS_ALLOW_CREDENTIALS = True
 # Optional: Allow all origins (not recommended for production)
 CORS_ALLOW_ALL_ORIGINS = True
+
+
+# Disable COOP header to allow postMessage from Google OAuth
+SECURE_CROSS_ORIGIN_OPENER_POLICY = None
