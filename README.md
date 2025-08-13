@@ -19,7 +19,7 @@
 
 - **Backend:** Django 5, Django REST Framework, PyMuPDF (fitz), Google Gemini API
 - **Authentication:** JWT (djangorestframework-simplejwt), Google OAuth
-- **Frontend:** React (Vite or CRA recommended)
+- **Frontend:** React (Vite recommended)
 - **Database:** SQLite (development) / Postgres recommended for production
 - **Hosting:** Render (backend) + Vercel (frontend)
 - **Environment Variables:** `.env` file or Render environment
@@ -125,4 +125,3 @@ Frontend is implemented in React and connects to backend via API. Recommended ho
 
 Ajaj – Final Year Engineering Student
 [GitHub](https://github.com/ajaj123-debug)
-```
