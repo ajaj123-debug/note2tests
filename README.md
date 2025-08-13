@@ -30,7 +30,7 @@
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/your-username/note2test.git
+git clone https://github.com/ajaj123-debug/note2tests.git
 cd note2test/backend
 ````
 
