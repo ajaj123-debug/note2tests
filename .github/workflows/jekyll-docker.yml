@@ -1,0 +1,19 @@
+name: Note2Test API Health Check
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'  # Runs every 5 minutes
+  workflow_dispatch:  # Allows manual trigger
+
+jobs:
+  ping-backend:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Note2Test Backend
+        run: |
+          response=$(curl -s -o /dev/null -w "%{http_code}" https://note2tests.onrender.com)
+          if [ "$response" -eq 200 ]; then
+            echo "✅ Note2Test is up and running!"
+          else
+            echo "⚠️ Note2Test returned status code $response"
+          fi
