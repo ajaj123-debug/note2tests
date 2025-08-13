@@ -7,7 +7,7 @@ export default function GoogleLogin({ onLoginSuccess }) {
     const idToken = response.credential;
 
     try {
-      const res = await fetch('http://localhost:8000/auth/google/', {
+      const res = await fetch(' https://note2tests.onrender.com/auth/google/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ token: idToken }),

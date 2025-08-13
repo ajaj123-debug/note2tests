@@ -42,13 +42,13 @@ export default function ProfilePage() {
     }
 
     try {
-      let res = await fetch("http://localhost:8000/api/user-quizzes/", {
+      let res = await fetch(" https://note2tests.onrender.com/api/user-quizzes/", {
         headers: { Authorization: `Bearer ${token}` },
       });
 
       if (res.status === 401 && refreshToken) {
         const refreshRes = await fetch(
-          "http://localhost:8000/api/token/refresh/",
+          " https://note2tests.onrender.com/api/token/refresh/",
           {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -60,7 +60,7 @@ export default function ProfilePage() {
           const data = await refreshRes.json();
           localStorage.setItem("access_token", data.access);
 
-          res = await fetch("http://localhost:8000/api/user-quizzes/", {
+          res = await fetch(" https://note2tests.onrender.com/api/user-quizzes/", {
             headers: { Authorization: `Bearer ${data.access}` },
           });
         }
@@ -88,7 +88,7 @@ export default function ProfilePage() {
     setLoadingDelete(quizId);
     try {
       const res = await fetch(
-        `http://localhost:8000/api/delete-quiz/${quizId}/`,
+        ` https://note2tests.onrender.com/api/delete-quiz/${quizId}/`,
         {
           method: "DELETE",
           headers: { Authorization: `Bearer ${token}` },

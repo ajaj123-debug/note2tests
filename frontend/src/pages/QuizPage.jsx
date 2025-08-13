@@ -38,7 +38,7 @@ export default function QuizPage() {
   useEffect(() => {
     async function fetchQuiz() {
       try {
-        const res = await fetch(`http://localhost:8000/api/quizzes/${id}/`);
+        const res = await fetch(` https://note2tests.onrender.com/api/quizzes/${id}/`);
         if (!res.ok) {
           const text = await res.text();
           setError(`Failed to fetch quiz: ${text}`);

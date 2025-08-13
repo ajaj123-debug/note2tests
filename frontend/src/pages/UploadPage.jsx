@@ -83,7 +83,7 @@ export default function UploadPage() {
     }, 200);
 
     try {
-      const res = await fetch("http://localhost:8000/api/generate-quiz/", {
+      const res = await fetch(" https://note2tests.onrender.com/api/generate-quiz/", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${accessToken}`,
