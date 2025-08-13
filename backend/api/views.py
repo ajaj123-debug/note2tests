@@ -2,8 +2,7 @@ import fitz  # PyMuPDF
 import logging
 from django.shortcuts import render
 
-# Create your views here.
-import json
+# Create your views
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.core.files.storage import default_storage
@@ -82,9 +81,7 @@ genai.configure(api_key=os.environ.get("GEMINI_API_KEY"))
 
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.decorators import api_view, permission_classes
-@api_view(['POST'])
-@permission_classes([IsAuthenticated])
-@csrf_exempt
+
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
 @csrf_exempt
